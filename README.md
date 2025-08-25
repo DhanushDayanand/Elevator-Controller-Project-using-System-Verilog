@@ -16,7 +16,9 @@ and efficiently serves multiple simultaneous requests.
 - **Request Clearance:** Once the lift reaches a floor and stops, the corresponding request is cleared automatically.
 - **Final Destination Logic:** Uses a combinational block to calculate the next floor to serve (`final_dest`) according to the requested direction, 
   ensuring the lift serves the highest or lowest floor in the current direction.
-- **Outputs:** Provides signals (`out_gnd`, `out_one`, `out_two`, `out_three`) that indicate the current lift position.  
+- **Outputs:**
+    - Provides signals (`out_gnd`, `out_one`, `out_two`, `out_three`) that indicate the current lift position.
+    - The lift stops for 2 clock cycles if it opens and closes doors and 1 clock cycle if that floor is just an intermediate step.
 - **Reset Support:** Resets lift to ground floor and clears all requests  
 
 This project demonstrates **Finite State Machine (FSM) design**, combinational logic for destination calculation, and sequential logic for state updates. 
