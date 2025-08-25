@@ -1,4 +1,4 @@
-# Elevator-FSM-Project
+# Elevator controller
 
 ## Project Description
 
