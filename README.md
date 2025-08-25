@@ -48,6 +48,8 @@ The testbench prints the lift’s current floor at each step and simulates butto
 
 ## Simulation Output Example
 
+![Simulation Output](Images/Simulation_output.png)
+
 ```bash
 Time=0 | out_gnd=1 out_one=0 out_two=0 out_three=0\n
 Test 1: Ground → Second Floor
